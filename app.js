@@ -13,6 +13,7 @@ const questionSection = document.getElementById('question-section');
 const answerSection = document.getElementById('answer-section');
 const button = document.getElementById('button');
 const askAgain = document.getElementById('ask-button');
+const answer = document.getElementById('answer');
 
 const answers = [
     'Yes, definitely',
@@ -38,6 +39,11 @@ const answers = [
 
 button.addEventListener('click', () => {
     toggleSections();
+
+    const randomInt = Math.floor(Math.random() * answers.length);
+    const randomChoice = answers[randomInt];
+
+    answer.textContent = randomChoice;
 });
 
 function toggleSections() {

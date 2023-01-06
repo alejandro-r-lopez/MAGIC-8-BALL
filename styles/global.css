@@ -48,8 +48,12 @@ main {
     height: 180px;
     background-color: white;
     border-radius: 90px;
+    display: grid;
     text-align: center;
-    padding-top: 76px;
+    align-items: center;
+    font-size: 1rem;
+    padding: 20px;
+    line-height: 1.4rem;
 }
 
 .button {
@@ -64,4 +68,7 @@ main {
 
 .hide {
     display: none;
+}
+
+.title {
 }
