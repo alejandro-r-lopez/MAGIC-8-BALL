@@ -1,5 +1,5 @@
 :root {
-    --background: rgb(234, 234, 234);
+    --background: rgb(0, 0, 0);
     --header-background: rgb(254, 251, 245);
     --primary-font: Corbel, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans',
         'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif;
@@ -30,7 +30,6 @@ main {
     display: grid;
     justify-content: center;
     align-content: center;
-    padding-top: 100px;
 }
 
 .big-circle {
@@ -41,6 +40,8 @@ main {
     align-content: center;
     background-color: black;
     border-radius: 200px;
+    border: solid 0.2rem;
+    border-color: white;
 }
 
 .small-circle {
@@ -59,11 +60,10 @@ main {
 .button {
     width: 20rem;
     height: 3rem;
-    margin-top: 1rem;
-}
-
-.ask-button {
-    margin-top: 20px;
+    margin-top: 3rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 30px;
 }
 
 .hide {
@@ -71,4 +71,35 @@ main {
 }
 
 .title {
+    margin-bottom: 80px;
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.input {
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 150px;
+}
+
+.ask-button {
+    margin-top: 20px;
+    padding: 30px;
+    width: 200px;
+    margin-left: 102px;
+    border-radius: 60px;
+    border: none;
+}
+
+.ask-button:active {
+    transform: translateY(4px);
 }
