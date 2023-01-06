@@ -12,6 +12,7 @@
 const questionSection = document.getElementById('question-section');
 const answerSection = document.getElementById('answer-section');
 const button = document.getElementById('button');
+const askAgain = document.getElementById('ask-button');
 
 const answers = [
     'Yes, definitely',
@@ -34,3 +35,16 @@ const answers = [
     'Outlook not so good',
     'Very doubtful',
 ];
+
+button.addEventListener('click', () => {
+    toggleSections();
+});
+
+function toggleSections() {
+    questionSection.classList.toggle('hide');
+    answerSection.classList.toggle('hide');
+}
+
+askAgain.addEventListener('click', () => {
+    toggleSections();
+});

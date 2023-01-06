@@ -61,3 +61,7 @@ main {
 .ask-button {
     margin-top: 20px;
 }
+
+.hide {
+    display: none;
+}
