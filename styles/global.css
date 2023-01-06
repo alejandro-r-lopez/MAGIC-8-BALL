@@ -1,5 +1,5 @@
 :root {
-    --background: rgb(224, 234, 247);
+    --background: rgb(234, 234, 234);
     --header-background: rgb(254, 251, 245);
     --primary-font: Corbel, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans',
         'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif;
@@ -12,24 +12,40 @@ body {
     grid-template-rows: auto 1fr;
 }
 
-header {
-    position: sticky;
-    top: 0;
-    padding: 15px;
-    height: 80px;
-
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    background-color: var(--header-background);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-
-header .logo {
-    height: 100%;
-}
-
 main {
-    padding: 20px;
+    padding: 100px;
+}
+
+/* * {
+    border: solid 1px;
+} */
+
+.question {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.answer {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    padding-top: 100px;
+}
+
+.big-circle {
+    width: 400px;
+    height: 400px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+    border-radius: 200px;
+}
+
+.small-circle {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 100px;
 }
