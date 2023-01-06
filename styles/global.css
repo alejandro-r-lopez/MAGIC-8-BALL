@@ -20,13 +20,13 @@ main {
     border: solid 1px;
 } */
 
-.question {
+.question-section {
     display: grid;
     justify-content: center;
     align-content: center;
 }
 
-.answer {
+.answer-section {
     display: grid;
     justify-content: center;
     align-content: center;
@@ -44,8 +44,20 @@ main {
 }
 
 .small-circle {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     background-color: white;
-    border-radius: 100px;
+    border-radius: 90px;
+    text-align: center;
+    padding-top: 76px;
+}
+
+.button {
+    width: 20rem;
+    height: 3rem;
+    margin-top: 1rem;
+}
+
+.ask-button {
+    margin-top: 20px;
 }

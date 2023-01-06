@@ -24,16 +24,17 @@
 
     <body>
         <main>
-            <section id="question" class="question">
+            <section id="question-section" class="question-section">
                 <h1 class="title">MAGIC 8 BALL</h1>
-                <input />
-                <button></button>
+                <input type="text" placeholder="What would you like to know?" />
+                <button class="button" id="button"></button>
             </section>
 
-            <section id="answer" class="answer">
+            <section id="answer-section" class="answer-section">
                 <h1 class="big-circle">
-                    <p class="small-circle"></p>
+                    <p id="answer" class="small-circle"></p>
                 </h1>
+                <button id="ask-button" class="ask-button">Ask Again</button>
             </section>
         </main>
     </body>
