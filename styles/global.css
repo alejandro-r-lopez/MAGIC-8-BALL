@@ -24,6 +24,7 @@ main {
     display: grid;
     justify-content: center;
     align-content: center;
+    text-align: center;
 }
 
 .answer-section {
@@ -33,37 +34,50 @@ main {
 }
 
 .big-circle {
-    width: 400px;
-    height: 400px;
+    width: 540px;
+    height: 540px;
     display: grid;
     justify-content: center;
     align-content: center;
     background-color: black;
-    border-radius: 200px;
-    border: solid 0.2rem;
+    border-radius: 270px;
+    border: solid 0.1rem;
     border-color: white;
+    margin-top: 40px;
 }
 
 .small-circle {
-    width: 180px;
-    height: 180px;
+    width: 300px;
+    height: 300px;
     background-color: white;
-    border-radius: 90px;
+    border-radius: 150px;
     display: grid;
     text-align: center;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.6rem;
     padding: 20px;
     line-height: 1.4rem;
+    font-family: 'Fredoka One';
+    font-weight: lighter;
 }
 
 .button {
-    width: 20rem;
+    display: grid;
+    justify-self: center;
+    width: 3rem;
     height: 3rem;
-    margin-top: 3rem;
+    margin-top: 12rem;
     background-color: rgb(255, 255, 255);
     border: none;
     border-radius: 30px;
+    opacity: 0.3;
+    transition: 0.3s;
+    align-items: center;
+    font-size: 32px;
+}
+
+.button:hover {
+    opacity: 1;
 }
 
 .hide {
@@ -71,35 +85,46 @@ main {
 }
 
 .title {
-    margin-bottom: 80px;
+    margin-bottom: 94px;
     font-size: 2rem;
     background-color: black;
     color: white;
     border-radius: 30px;
-    padding: 12px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Fredoka One';
 }
 
 .input {
+    background-image: url('/Users/rafa/alchemy/onboarding/MAGIC-8-BALL/assets/8.png');
+    background-repeat: no-repeat;
     height: 300px;
     width: 300px;
     text-align: center;
     border: none;
     outline: none;
-    font-size: 18px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 150px;
+    background-image: url('/Users/rafa/alchemy/onboarding/MAGIC-8-BALL/assets/8.png');
+    background-repeat: no-repeat;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 .ask-button {
-    margin-top: 20px;
-    padding: 30px;
-    width: 200px;
-    margin-left: 102px;
-    border-radius: 60px;
+    width: 3rem;
+    height: 3rem;
+    margin-top: 3.2rem;
+    background-color: rgb(255, 255, 255);
     border: none;
+    border-radius: 30px;
+    display: grid;
+    justify-self: center;
+    opacity: 0.3;
+    transition: 0.3s;
+    align-items: center;
+    font-size: 32px;
 }
 
-.ask-button:active {
-    transform: translateY(4px);
+.ask-button:hover {
+    opacity: 1;
 }

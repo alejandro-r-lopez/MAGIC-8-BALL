@@ -54,3 +54,5 @@ function toggleSections() {
 askAgain.addEventListener('click', () => {
     toggleSections();
 });
+
+answers.style.fontFamily = 'Fredoka One';
