@@ -1,19 +1,9 @@
-/* Imports */
-
-/* Get DOM Elements */
-
-/* State */
-
-/* Events */
-
-/* Display Functions */
-
-// (don't forget to call any display functions you want to run on page load!)
 const questionSection = document.getElementById('question-section');
 const answerSection = document.getElementById('answer-section');
 const button = document.getElementById('button');
 const askAgain = document.getElementById('ask-button');
 const answer = document.getElementById('answer');
+const input = document.getElementById('input');
 
 const answers = [
     'Yes, definitely',
@@ -42,7 +32,7 @@ button.addEventListener('click', () => {
 
     const randomInt = Math.floor(Math.random() * answers.length);
     const randomChoice = answers[randomInt];
-
+    input.value = '';
     answer.textContent = randomChoice;
 });
 
